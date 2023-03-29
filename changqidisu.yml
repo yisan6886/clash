@@ -5,207 +5,135 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 V2-香港 多台负载均衡 中继E | 2x, server: in05.my1188.org, port: 64078, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
-  - {name: 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x, server: in04.my1188.org, port: 64087, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: sg-balancer.tencent.best}}, udp: true}
-  - {name: 🇭🇰 V1-香港 多台负载均衡 中继C | 2x, server: in03.my1188.org, port: 64078, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
-  - {name: 🇭🇰 V1-香港 多台负载均衡 中继D | 2x, server: in04.my1188.org, port: 64078, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
-  - {name: 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x, server: tw99-hinet.mynodes001.one, port: 5432, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x, server: in04.my1188.org, port: 64088, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
-  - {name: 🇭🇰 香港HKT | 解锁流媒体, server: download1hkt.windowsupdate.lol, port: 443, type: trojan, password: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, sni: glc.windowsupdate1.com, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/de?ed=2048", headers: {Host: de.guolicheng.cyou}}, udp: true}
-  - {name: 🇺🇸 美国洛杉矶 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/us1?ed=2048", headers: {Host: us1.guolicheng.cyou}}, udp: true}
-  - {name: 🇭🇰 香港HGC | 解锁流媒体, server: download1hgc.windowsupdate.lol, port: 443, type: trojan, password: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, sni: glc.windowsupdate1.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 V1-香港HKT03 CDN 中继 2x, server: in05.my1188.org, port: 64082, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt3-cdn.tencent.best}}, udp: true}
-  - {name: 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x, server: in05.my1188.org, port: 64086, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: 🇬🇧 V1-英国01 CDN 中继 1.5x, server: in05.my1188.org, port: 64021, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uk01-cdn.airport-v2.com}}, udp: true}
-  - {name: 🇹🇷 土耳其, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/tr1?ed=2048", headers: {Host: tr1.guolicheng.cyou}}, udp: true}
-  - {name: 🇭🇰 香港HGC-1号线路 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hkhgc?ed=2048", headers: {Host: hkhgc.guolicheng.cyou}}, udp: true}
-  - {name: 🇭🇰 V1-香港HKT02 CDN 中继 2x, server: in05.my1188.org, port: 64081, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt2-cdn.tencent.best}}, udp: true}
-  - {name: 🇺🇸 美国凤凰城 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/us3?ed=2048", headers: {Host: us3.guolicheng.cyou}}, udp: true}
-  - {name: 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x, server: in03.my1188.org, port: 64087, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: sg-balancer.tencent.best}}, udp: true}
-  - {name: 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.guolicheng.cyou}}, udp: true}
-  - {name: 🇫🇷 法国 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/fr?ed=2048", headers: {Host: fr.guolicheng.cyou}}, udp: true}
-  - {name: 🇭🇰 YouTube梦歌|广港BGP_1, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.guolicheng.cyou}}, udp: true}
-  - {name: 🇺🇸 美国圣何塞 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/us2?ed=2048", headers: {Host: us2.guolicheng.cyou}}, udp: true}
-  - {name: YouTube梦歌|MGxray, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.guolicheng.cyou}}, udp: true}
-  - {name: 🇯🇵 日本path | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/jp1?ed=2048", headers: {Host: jp1.guolicheng.cyou}}, udp: true}
-  - {name: 🇻🇳 YouTube梦歌|越南_4, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.guolicheng.cyou}}, udp: true}
-  - {name: 🇻🇳 YouTube梦歌|越南_1, server: 103.173.255.21, port: 443, type: trojan, password: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, sni: glc.hruqoaw.cn, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 V1-香港 多台负载均衡 中继A | 2x, server: in01.my1188.org, port: 64078, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
-  - {name: 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x, server: in01.my1188.org, port: 64087, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: sg-balancer.tencent.best}}, udp: true}
-  - {name: 🇳🇱 荷兰10G | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/nl1?ed=2048", headers: {Host: nl1.guolicheng.cyou}}, udp: true}
-  - {name: 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x, server: in01.my1188.org, port: 64088, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
-  - {name: 🇻🇳 YouTube梦歌|越南_5, server: 103.173.255.234, port: 443, type: trojan, password: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, sni: glc.hruqoaw.cn, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x, server: in05.my1188.org, port: 64088, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
-  - {name: 🇻🇳 越南1G | 解锁流媒体, server: 103.195.236.24, port: 443, type: trojan, password: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, sni: glc.hruqoaw.cn, skip-cert-verify: false, udp: true}
-  - {name: YouTube梦歌|江北移动_1, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.guolicheng.cyou}}, udp: true}
-  - {name: 🇦🇷 V2-阿根廷01 CDN 中继 龟速2x, server: in05.my1188.org, port: 64072, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ag01-cdn.myn1des.com}}, udp: true}
-  - {name: 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x, server: in04.my1188.org, port: 64086, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: 🇹🇷 V2-土耳其01 中继E | 2x, server: in05.my1188.org, port: 64028, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: biteb-tr01.covid19.rip}}, udp: true}
-  - {name: 🇩🇪 V1-德国01 CDN 中继 1.5x, server: in05.my1188.org, port: 64084, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: de01-cdn.airport-v2.com}}, udp: true}
-  - {name: 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x, server: in03.my1188.org, port: 64086, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x, server: in03.my1188.org, port: 64088, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
-  - {name: 🇹🇷 V2-土耳其01 中继A | 2x, server: in01.my1188.org, port: 64028, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: biteb-tr01.covid19.rip}}, udp: true}
-  - {name: 🇹🇷 V2-土耳其01 中继C | 2x, server: in03.my1188.org, port: 64028, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: biteb-tr01.covid19.rip}}, udp: true}
-  - {name: 🇻🇳 YouTube梦歌|越南_2, server: 103.81.85.238, port: 443, type: trojan, password: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, sni: glc.hruqoaw.cn, skip-cert-verify: false, udp: true}
-  - {name: 🇹🇷 土耳其Tr, server: 141.11.127.23, port: 443, type: trojan, password: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, sni: glc.windowsupdate1.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x, server: in01.my1188.org, port: 64086, type: vmess, uuid: 2310f095-58fd-310d-82cd-5b252753c1ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /biteb, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: 🇻🇳 YouTube梦歌|越南_3, server: 103.173.255.127, port: 443, type: trojan, password: 087bd9c9-2d6b-4e57-9442-e46e4b51f9d0, sni: glc.hruqoaw.cn, skip-cert-verify: false, udp: true}
+  - {name: YouTube梦歌|华北低速_1, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nls.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_2, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: lsb-aries.heinu.cf}}, udp: true}
+  - {name: YouTube梦歌|华北低速_3, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: aws-usa.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_4, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_5, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_6, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw-nl.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_7, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_8, server: cf.noaries.de, port: 2082, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_9, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ft.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_10, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_11, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: mio.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_12, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_13, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ee.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_14, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_15, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vn.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_16, server: cf.noaries.de, port: 2086, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_17, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_18, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_19, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: awsus2.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_20, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nls.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_21, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ft.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_22, server: cf.noaries.de, port: 80, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_23, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: aws-usa.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_24, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ro.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_25, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_26, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_27, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: YouTube梦歌|华北低速_28, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 V2-香港 多台负载均衡 中继E | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x
-      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
-      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
-      - 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x
-      - 🇭🇰 香港HKT | 解锁流媒体
-      - 🇩🇪 德国 | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇭🇰 香港HGC | 解锁流媒体
-      - 🇭🇰 V1-香港HKT03 CDN 中继 2x
-      - 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x
-      - 🇬🇧 V1-英国01 CDN 中继 1.5x
-      - 🇹🇷 土耳其
-      - 🇭🇰 香港HGC-1号线路 | 解锁流媒体
-      - 🇭🇰 V1-香港HKT02 CDN 中继 2x
-      - 🇺🇸 美国凤凰城 | 解锁流媒体
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
-      - 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体
-      - 🇫🇷 法国 | 解锁流媒体
-      - 🇭🇰 YouTube梦歌|广港BGP_1
-      - 🇺🇸 美国圣何塞 | 解锁流媒体
-      - YouTube梦歌|MGxray
-      - 🇯🇵 日本path | 解锁流媒体
-      - 🇻🇳 YouTube梦歌|越南_4
-      - 🇻🇳 YouTube梦歌|越南_1
-      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
-      - 🇳🇱 荷兰10G | 解锁流媒体
-      - 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_5
-      - 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x
-      - 🇻🇳 越南1G | 解锁流媒体
-      - YouTube梦歌|江北移动_1
-      - 🇦🇷 V2-阿根廷01 CDN 中继 龟速2x
-      - 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x
-      - 🇹🇷 V2-土耳其01 中继E | 2x
-      - 🇩🇪 V1-德国01 CDN 中继 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x
-      - 🇹🇷 V2-土耳其01 中继A | 2x
-      - 🇹🇷 V2-土耳其01 中继C | 2x
-      - 🇻🇳 YouTube梦歌|越南_2
-      - 🇹🇷 土耳其Tr
-      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_3
+      - YouTube梦歌|华北低速_1
+      - YouTube梦歌|华北低速_2
+      - YouTube梦歌|华北低速_3
+      - YouTube梦歌|华北低速_4
+      - YouTube梦歌|华北低速_5
+      - YouTube梦歌|华北低速_6
+      - YouTube梦歌|华北低速_7
+      - YouTube梦歌|华北低速_8
+      - YouTube梦歌|华北低速_9
+      - YouTube梦歌|华北低速_10
+      - YouTube梦歌|华北低速_11
+      - YouTube梦歌|华北低速_12
+      - YouTube梦歌|华北低速_13
+      - YouTube梦歌|华北低速_14
+      - YouTube梦歌|华北低速_15
+      - YouTube梦歌|华北低速_16
+      - YouTube梦歌|华北低速_17
+      - YouTube梦歌|华北低速_18
+      - YouTube梦歌|华北低速_19
+      - YouTube梦歌|华北低速_20
+      - YouTube梦歌|华北低速_21
+      - YouTube梦歌|华北低速_22
+      - YouTube梦歌|华北低速_23
+      - YouTube梦歌|华北低速_24
+      - YouTube梦歌|华北低速_25
+      - YouTube梦歌|华北低速_26
+      - YouTube梦歌|华北低速_27
+      - YouTube梦歌|华北低速_28
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 V2-香港 多台负载均衡 中继E | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x
-      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
-      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
-      - 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x
-      - 🇭🇰 香港HKT | 解锁流媒体
-      - 🇩🇪 德国 | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇭🇰 香港HGC | 解锁流媒体
-      - 🇭🇰 V1-香港HKT03 CDN 中继 2x
-      - 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x
-      - 🇬🇧 V1-英国01 CDN 中继 1.5x
-      - 🇹🇷 土耳其
-      - 🇭🇰 香港HGC-1号线路 | 解锁流媒体
-      - 🇭🇰 V1-香港HKT02 CDN 中继 2x
-      - 🇺🇸 美国凤凰城 | 解锁流媒体
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
-      - 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体
-      - 🇫🇷 法国 | 解锁流媒体
-      - 🇭🇰 YouTube梦歌|广港BGP_1
-      - 🇺🇸 美国圣何塞 | 解锁流媒体
-      - YouTube梦歌|MGxray
-      - 🇯🇵 日本path | 解锁流媒体
-      - 🇻🇳 YouTube梦歌|越南_4
-      - 🇻🇳 YouTube梦歌|越南_1
-      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
-      - 🇳🇱 荷兰10G | 解锁流媒体
-      - 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_5
-      - 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x
-      - 🇻🇳 越南1G | 解锁流媒体
-      - YouTube梦歌|江北移动_1
-      - 🇦🇷 V2-阿根廷01 CDN 中继 龟速2x
-      - 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x
-      - 🇹🇷 V2-土耳其01 中继E | 2x
-      - 🇩🇪 V1-德国01 CDN 中继 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x
-      - 🇹🇷 V2-土耳其01 中继A | 2x
-      - 🇹🇷 V2-土耳其01 中继C | 2x
-      - 🇻🇳 YouTube梦歌|越南_2
-      - 🇹🇷 土耳其Tr
-      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_3
+      - YouTube梦歌|华北低速_1
+      - YouTube梦歌|华北低速_2
+      - YouTube梦歌|华北低速_3
+      - YouTube梦歌|华北低速_4
+      - YouTube梦歌|华北低速_5
+      - YouTube梦歌|华北低速_6
+      - YouTube梦歌|华北低速_7
+      - YouTube梦歌|华北低速_8
+      - YouTube梦歌|华北低速_9
+      - YouTube梦歌|华北低速_10
+      - YouTube梦歌|华北低速_11
+      - YouTube梦歌|华北低速_12
+      - YouTube梦歌|华北低速_13
+      - YouTube梦歌|华北低速_14
+      - YouTube梦歌|华北低速_15
+      - YouTube梦歌|华北低速_16
+      - YouTube梦歌|华北低速_17
+      - YouTube梦歌|华北低速_18
+      - YouTube梦歌|华北低速_19
+      - YouTube梦歌|华北低速_20
+      - YouTube梦歌|华北低速_21
+      - YouTube梦歌|华北低速_22
+      - YouTube梦歌|华北低速_23
+      - YouTube梦歌|华北低速_24
+      - YouTube梦歌|华北低速_25
+      - YouTube梦歌|华北低速_26
+      - YouTube梦歌|华北低速_27
+      - YouTube梦歌|华北低速_28
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 V2-香港 多台负载均衡 中继E | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x
-      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
-      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
-      - 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x
-      - 🇭🇰 香港HKT | 解锁流媒体
-      - 🇩🇪 德国 | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇭🇰 香港HGC | 解锁流媒体
-      - 🇭🇰 V1-香港HKT03 CDN 中继 2x
-      - 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x
-      - 🇬🇧 V1-英国01 CDN 中继 1.5x
-      - 🇹🇷 土耳其
-      - 🇭🇰 香港HGC-1号线路 | 解锁流媒体
-      - 🇭🇰 V1-香港HKT02 CDN 中继 2x
-      - 🇺🇸 美国凤凰城 | 解锁流媒体
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
-      - 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体
-      - 🇫🇷 法国 | 解锁流媒体
-      - 🇭🇰 YouTube梦歌|广港BGP_1
-      - 🇺🇸 美国圣何塞 | 解锁流媒体
-      - YouTube梦歌|MGxray
-      - 🇯🇵 日本path | 解锁流媒体
-      - 🇻🇳 YouTube梦歌|越南_4
-      - 🇻🇳 YouTube梦歌|越南_1
-      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
-      - 🇳🇱 荷兰10G | 解锁流媒体
-      - 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_5
-      - 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x
-      - 🇻🇳 越南1G | 解锁流媒体
-      - YouTube梦歌|江北移动_1
-      - 🇦🇷 V2-阿根廷01 CDN 中继 龟速2x
-      - 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x
-      - 🇹🇷 V2-土耳其01 中继E | 2x
-      - 🇩🇪 V1-德国01 CDN 中继 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x
-      - 🇹🇷 V2-土耳其01 中继A | 2x
-      - 🇹🇷 V2-土耳其01 中继C | 2x
-      - 🇻🇳 YouTube梦歌|越南_2
-      - 🇹🇷 土耳其Tr
-      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_3
+      - YouTube梦歌|华北低速_1
+      - YouTube梦歌|华北低速_2
+      - YouTube梦歌|华北低速_3
+      - YouTube梦歌|华北低速_4
+      - YouTube梦歌|华北低速_5
+      - YouTube梦歌|华北低速_6
+      - YouTube梦歌|华北低速_7
+      - YouTube梦歌|华北低速_8
+      - YouTube梦歌|华北低速_9
+      - YouTube梦歌|华北低速_10
+      - YouTube梦歌|华北低速_11
+      - YouTube梦歌|华北低速_12
+      - YouTube梦歌|华北低速_13
+      - YouTube梦歌|华北低速_14
+      - YouTube梦歌|华北低速_15
+      - YouTube梦歌|华北低速_16
+      - YouTube梦歌|华北低速_17
+      - YouTube梦歌|华北低速_18
+      - YouTube梦歌|华北低速_19
+      - YouTube梦歌|华北低速_20
+      - YouTube梦歌|华北低速_21
+      - YouTube梦歌|华北低速_22
+      - YouTube梦歌|华北低速_23
+      - YouTube梦歌|华北低速_24
+      - YouTube梦歌|华北低速_25
+      - YouTube梦歌|华北低速_26
+      - YouTube梦歌|华北低速_27
+      - YouTube梦歌|华北低速_28
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -224,234 +152,139 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 V2-香港 多台负载均衡 中继E | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x
-      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
-      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
-      - 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x
-      - 🇭🇰 香港HKT | 解锁流媒体
-      - 🇩🇪 德国 | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇭🇰 香港HGC | 解锁流媒体
-      - 🇭🇰 V1-香港HKT03 CDN 中继 2x
-      - 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x
-      - 🇬🇧 V1-英国01 CDN 中继 1.5x
-      - 🇹🇷 土耳其
-      - 🇭🇰 香港HGC-1号线路 | 解锁流媒体
-      - 🇭🇰 V1-香港HKT02 CDN 中继 2x
-      - 🇺🇸 美国凤凰城 | 解锁流媒体
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
-      - 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体
-      - 🇫🇷 法国 | 解锁流媒体
-      - 🇭🇰 YouTube梦歌|广港BGP_1
-      - 🇺🇸 美国圣何塞 | 解锁流媒体
-      - YouTube梦歌|MGxray
-      - 🇯🇵 日本path | 解锁流媒体
-      - 🇻🇳 YouTube梦歌|越南_4
-      - 🇻🇳 YouTube梦歌|越南_1
-      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
-      - 🇳🇱 荷兰10G | 解锁流媒体
-      - 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_5
-      - 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x
-      - 🇻🇳 越南1G | 解锁流媒体
-      - YouTube梦歌|江北移动_1
-      - 🇦🇷 V2-阿根廷01 CDN 中继 龟速2x
-      - 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x
-      - 🇹🇷 V2-土耳其01 中继E | 2x
-      - 🇩🇪 V1-德国01 CDN 中继 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x
-      - 🇹🇷 V2-土耳其01 中继A | 2x
-      - 🇹🇷 V2-土耳其01 中继C | 2x
-      - 🇻🇳 YouTube梦歌|越南_2
-      - 🇹🇷 土耳其Tr
-      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_3
+      - YouTube梦歌|华北低速_1
+      - YouTube梦歌|华北低速_2
+      - YouTube梦歌|华北低速_3
+      - YouTube梦歌|华北低速_4
+      - YouTube梦歌|华北低速_5
+      - YouTube梦歌|华北低速_6
+      - YouTube梦歌|华北低速_7
+      - YouTube梦歌|华北低速_8
+      - YouTube梦歌|华北低速_9
+      - YouTube梦歌|华北低速_10
+      - YouTube梦歌|华北低速_11
+      - YouTube梦歌|华北低速_12
+      - YouTube梦歌|华北低速_13
+      - YouTube梦歌|华北低速_14
+      - YouTube梦歌|华北低速_15
+      - YouTube梦歌|华北低速_16
+      - YouTube梦歌|华北低速_17
+      - YouTube梦歌|华北低速_18
+      - YouTube梦歌|华北低速_19
+      - YouTube梦歌|华北低速_20
+      - YouTube梦歌|华北低速_21
+      - YouTube梦歌|华北低速_22
+      - YouTube梦歌|华北低速_23
+      - YouTube梦歌|华北低速_24
+      - YouTube梦歌|华北低速_25
+      - YouTube梦歌|华北低速_26
+      - YouTube梦歌|华北低速_27
+      - YouTube梦歌|华北低速_28
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 V2-香港 多台负载均衡 中继E | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x
-      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
-      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
-      - 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x
-      - 🇭🇰 香港HKT | 解锁流媒体
-      - 🇭🇰 香港HGC | 解锁流媒体
-      - 🇭🇰 V1-香港HKT03 CDN 中继 2x
-      - 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x
-      - 🇭🇰 香港HGC-1号线路 | 解锁流媒体
-      - 🇭🇰 V1-香港HKT02 CDN 中继 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
-      - 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体
-      - 🇭🇰 YouTube梦歌|广港BGP_1
-      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x
-      - 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 V2-香港 多台负载均衡 中继E | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x
-      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
-      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
-      - 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x
-      - 🇭🇰 香港HKT | 解锁流媒体
-      - 🇩🇪 德国 | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇭🇰 香港HGC | 解锁流媒体
-      - 🇭🇰 V1-香港HKT03 CDN 中继 2x
-      - 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x
-      - 🇬🇧 V1-英国01 CDN 中继 1.5x
-      - 🇹🇷 土耳其
-      - 🇭🇰 香港HGC-1号线路 | 解锁流媒体
-      - 🇭🇰 V1-香港HKT02 CDN 中继 2x
-      - 🇺🇸 美国凤凰城 | 解锁流媒体
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
-      - 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体
-      - 🇫🇷 法国 | 解锁流媒体
-      - 🇭🇰 YouTube梦歌|广港BGP_1
-      - 🇺🇸 美国圣何塞 | 解锁流媒体
-      - YouTube梦歌|MGxray
-      - 🇯🇵 日本path | 解锁流媒体
-      - 🇻🇳 YouTube梦歌|越南_4
-      - 🇻🇳 YouTube梦歌|越南_1
-      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
-      - 🇳🇱 荷兰10G | 解锁流媒体
-      - 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_5
-      - 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x
-      - 🇻🇳 越南1G | 解锁流媒体
-      - YouTube梦歌|江北移动_1
-      - 🇦🇷 V2-阿根廷01 CDN 中继 龟速2x
-      - 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x
-      - 🇹🇷 V2-土耳其01 中继E | 2x
-      - 🇩🇪 V1-德国01 CDN 中继 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x
-      - 🇹🇷 V2-土耳其01 中继A | 2x
-      - 🇹🇷 V2-土耳其01 中继C | 2x
-      - 🇻🇳 YouTube梦歌|越南_2
-      - 🇹🇷 土耳其Tr
-      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_3
+      - YouTube梦歌|华北低速_1
+      - YouTube梦歌|华北低速_2
+      - YouTube梦歌|华北低速_3
+      - YouTube梦歌|华北低速_4
+      - YouTube梦歌|华北低速_5
+      - YouTube梦歌|华北低速_6
+      - YouTube梦歌|华北低速_7
+      - YouTube梦歌|华北低速_8
+      - YouTube梦歌|华北低速_9
+      - YouTube梦歌|华北低速_10
+      - YouTube梦歌|华北低速_11
+      - YouTube梦歌|华北低速_12
+      - YouTube梦歌|华北低速_13
+      - YouTube梦歌|华北低速_14
+      - YouTube梦歌|华北低速_15
+      - YouTube梦歌|华北低速_16
+      - YouTube梦歌|华北低速_17
+      - YouTube梦歌|华北低速_18
+      - YouTube梦歌|华北低速_19
+      - YouTube梦歌|华北低速_20
+      - YouTube梦歌|华北低速_21
+      - YouTube梦歌|华北低速_22
+      - YouTube梦歌|华北低速_23
+      - YouTube梦歌|华北低速_24
+      - YouTube梦歌|华北低速_25
+      - YouTube梦歌|华北低速_26
+      - YouTube梦歌|华北低速_27
+      - YouTube梦歌|华北低速_28
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 V2-香港 多台负载均衡 中继E | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x
-      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
-      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
-      - 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x
-      - 🇭🇰 香港HKT | 解锁流媒体
-      - 🇩🇪 德国 | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇭🇰 香港HGC | 解锁流媒体
-      - 🇭🇰 V1-香港HKT03 CDN 中继 2x
-      - 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x
-      - 🇬🇧 V1-英国01 CDN 中继 1.5x
-      - 🇹🇷 土耳其
-      - 🇭🇰 香港HGC-1号线路 | 解锁流媒体
-      - 🇭🇰 V1-香港HKT02 CDN 中继 2x
-      - 🇺🇸 美国凤凰城 | 解锁流媒体
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
-      - 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体
-      - 🇫🇷 法国 | 解锁流媒体
-      - 🇭🇰 YouTube梦歌|广港BGP_1
-      - 🇺🇸 美国圣何塞 | 解锁流媒体
-      - YouTube梦歌|MGxray
-      - 🇯🇵 日本path | 解锁流媒体
-      - 🇻🇳 YouTube梦歌|越南_4
-      - 🇻🇳 YouTube梦歌|越南_1
-      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
-      - 🇳🇱 荷兰10G | 解锁流媒体
-      - 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_5
-      - 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x
-      - 🇻🇳 越南1G | 解锁流媒体
-      - YouTube梦歌|江北移动_1
-      - 🇦🇷 V2-阿根廷01 CDN 中继 龟速2x
-      - 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x
-      - 🇹🇷 V2-土耳其01 中继E | 2x
-      - 🇩🇪 V1-德国01 CDN 中继 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x
-      - 🇹🇷 V2-土耳其01 中继A | 2x
-      - 🇹🇷 V2-土耳其01 中继C | 2x
-      - 🇻🇳 YouTube梦歌|越南_2
-      - 🇹🇷 土耳其Tr
-      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_3
+      - YouTube梦歌|华北低速_1
+      - YouTube梦歌|华北低速_2
+      - YouTube梦歌|华北低速_3
+      - YouTube梦歌|华北低速_4
+      - YouTube梦歌|华北低速_5
+      - YouTube梦歌|华北低速_6
+      - YouTube梦歌|华北低速_7
+      - YouTube梦歌|华北低速_8
+      - YouTube梦歌|华北低速_9
+      - YouTube梦歌|华北低速_10
+      - YouTube梦歌|华北低速_11
+      - YouTube梦歌|华北低速_12
+      - YouTube梦歌|华北低速_13
+      - YouTube梦歌|华北低速_14
+      - YouTube梦歌|华北低速_15
+      - YouTube梦歌|华北低速_16
+      - YouTube梦歌|华北低速_17
+      - YouTube梦歌|华北低速_18
+      - YouTube梦歌|华北低速_19
+      - YouTube梦歌|华北低速_20
+      - YouTube梦歌|华北低速_21
+      - YouTube梦歌|华北低速_22
+      - YouTube梦歌|华北低速_23
+      - YouTube梦歌|华北低速_24
+      - YouTube梦歌|华北低速_25
+      - YouTube梦歌|华北低速_26
+      - YouTube梦歌|华北低速_27
+      - YouTube梦歌|华北低速_28
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 V2-香港 多台负载均衡 中继E | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x
-      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
-      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
-      - 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x
-      - 🇭🇰 香港HKT | 解锁流媒体
-      - 🇩🇪 德国 | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇭🇰 香港HGC | 解锁流媒体
-      - 🇭🇰 V1-香港HKT03 CDN 中继 2x
-      - 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x
-      - 🇬🇧 V1-英国01 CDN 中继 1.5x
-      - 🇹🇷 土耳其
-      - 🇭🇰 香港HGC-1号线路 | 解锁流媒体
-      - 🇭🇰 V1-香港HKT02 CDN 中继 2x
-      - 🇺🇸 美国凤凰城 | 解锁流媒体
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
-      - 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体
-      - 🇫🇷 法国 | 解锁流媒体
-      - 🇭🇰 YouTube梦歌|广港BGP_1
-      - 🇺🇸 美国圣何塞 | 解锁流媒体
-      - YouTube梦歌|MGxray
-      - 🇯🇵 日本path | 解锁流媒体
-      - 🇻🇳 YouTube梦歌|越南_4
-      - 🇻🇳 YouTube梦歌|越南_1
-      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
-      - 🇳🇱 荷兰10G | 解锁流媒体
-      - 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_5
-      - 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x
-      - 🇻🇳 越南1G | 解锁流媒体
-      - YouTube梦歌|江北移动_1
-      - 🇦🇷 V2-阿根廷01 CDN 中继 龟速2x
-      - 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x
-      - 🇹🇷 V2-土耳其01 中继E | 2x
-      - 🇩🇪 V1-德国01 CDN 中继 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x
-      - 🇹🇷 V2-土耳其01 中继A | 2x
-      - 🇹🇷 V2-土耳其01 中继C | 2x
-      - 🇻🇳 YouTube梦歌|越南_2
-      - 🇹🇷 土耳其Tr
-      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_3
+      - YouTube梦歌|华北低速_1
+      - YouTube梦歌|华北低速_2
+      - YouTube梦歌|华北低速_3
+      - YouTube梦歌|华北低速_4
+      - YouTube梦歌|华北低速_5
+      - YouTube梦歌|华北低速_6
+      - YouTube梦歌|华北低速_7
+      - YouTube梦歌|华北低速_8
+      - YouTube梦歌|华北低速_9
+      - YouTube梦歌|华北低速_10
+      - YouTube梦歌|华北低速_11
+      - YouTube梦歌|华北低速_12
+      - YouTube梦歌|华北低速_13
+      - YouTube梦歌|华北低速_14
+      - YouTube梦歌|华北低速_15
+      - YouTube梦歌|华北低速_16
+      - YouTube梦歌|华北低速_17
+      - YouTube梦歌|华北低速_18
+      - YouTube梦歌|华北低速_19
+      - YouTube梦歌|华北低速_20
+      - YouTube梦歌|华北低速_21
+      - YouTube梦歌|华北低速_22
+      - YouTube梦歌|华北低速_23
+      - YouTube梦歌|华北低速_24
+      - YouTube梦歌|华北低速_25
+      - YouTube梦歌|华北低速_26
+      - YouTube梦歌|华北低速_27
+      - YouTube梦歌|华北低速_28
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -467,52 +300,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 V2-香港 多台负载均衡 中继E | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继D 1.5x
-      - 🇭🇰 V1-香港 多台负载均衡 中继C | 2x
-      - 🇭🇰 V1-香港 多台负载均衡 中继D | 2x
-      - 🇨🇳 V1-台湾99 Hinet直连 速度随缘 0.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继D 1.5x
-      - 🇭🇰 香港HKT | 解锁流媒体
-      - 🇩🇪 德国 | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇭🇰 香港HGC | 解锁流媒体
-      - 🇭🇰 V1-香港HKT03 CDN 中继 2x
-      - 🇨🇳 V2-日本 多台负载均衡 中继E 1.5x
-      - 🇬🇧 V1-英国01 CDN 中继 1.5x
-      - 🇹🇷 土耳其
-      - 🇭🇰 香港HGC-1号线路 | 解锁流媒体
-      - 🇭🇰 V1-香港HKT02 CDN 中继 2x
-      - 🇺🇸 美国凤凰城 | 解锁流媒体
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继C 1.5x
-      - 🇨🇳 台湾Hinet-1号线路 | 解锁流媒体
-      - 🇫🇷 法国 | 解锁流媒体
-      - 🇭🇰 YouTube梦歌|广港BGP_1
-      - 🇺🇸 美国圣何塞 | 解锁流媒体
-      - YouTube梦歌|MGxray
-      - 🇯🇵 日本path | 解锁流媒体
-      - 🇻🇳 YouTube梦歌|越南_4
-      - 🇻🇳 YouTube梦歌|越南_1
-      - 🇭🇰 V1-香港 多台负载均衡 中继A | 2x
-      - 🇨🇳 V1-新加坡 多台负载均衡 中继A 1.5x
-      - 🇳🇱 荷兰10G | 解锁流媒体
-      - 🇨🇳 V1-台湾 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_5
-      - 🇨🇳 V2-台湾 多台负载均衡 中继E 1.5x
-      - 🇻🇳 越南1G | 解锁流媒体
-      - YouTube梦歌|江北移动_1
-      - 🇦🇷 V2-阿根廷01 CDN 中继 龟速2x
-      - 🇨🇳 V1-日本 多台负载均衡 中继D 1.5x
-      - 🇹🇷 V2-土耳其01 中继E | 2x
-      - 🇩🇪 V1-德国01 CDN 中继 1.5x
-      - 🇨🇳 V1-日本 多台负载均衡 中继C 1.5x
-      - 🇨🇳 V1-台湾 多台负载均衡 中继C 1.5x
-      - 🇹🇷 V2-土耳其01 中继A | 2x
-      - 🇹🇷 V2-土耳其01 中继C | 2x
-      - 🇻🇳 YouTube梦歌|越南_2
-      - 🇹🇷 土耳其Tr
-      - 🇨🇳 V1-日本 多台负载均衡 中继A 1.5x
-      - 🇻🇳 YouTube梦歌|越南_3
+      - YouTube梦歌|华北低速_1
+      - YouTube梦歌|华北低速_2
+      - YouTube梦歌|华北低速_3
+      - YouTube梦歌|华北低速_4
+      - YouTube梦歌|华北低速_5
+      - YouTube梦歌|华北低速_6
+      - YouTube梦歌|华北低速_7
+      - YouTube梦歌|华北低速_8
+      - YouTube梦歌|华北低速_9
+      - YouTube梦歌|华北低速_10
+      - YouTube梦歌|华北低速_11
+      - YouTube梦歌|华北低速_12
+      - YouTube梦歌|华北低速_13
+      - YouTube梦歌|华北低速_14
+      - YouTube梦歌|华北低速_15
+      - YouTube梦歌|华北低速_16
+      - YouTube梦歌|华北低速_17
+      - YouTube梦歌|华北低速_18
+      - YouTube梦歌|华北低速_19
+      - YouTube梦歌|华北低速_20
+      - YouTube梦歌|华北低速_21
+      - YouTube梦歌|华北低速_22
+      - YouTube梦歌|华北低速_23
+      - YouTube梦歌|华北低速_24
+      - YouTube梦歌|华北低速_25
+      - YouTube梦歌|华北低速_26
+      - YouTube梦歌|华北低速_27
+      - YouTube梦歌|华北低速_28
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
