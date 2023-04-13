@@ -5,135 +5,123 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: YouTube梦歌|华北低速_1, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nls.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_2, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: lsb-aries.heinu.cf}}, udp: true}
-  - {name: YouTube梦歌|华北低速_3, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: aws-usa.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_4, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_5, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_6, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw-nl.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_7, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_8, server: cf.noaries.de, port: 2082, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_9, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ft.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_10, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_11, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: mio.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_12, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_13, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ee.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_14, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_15, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vn.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_16, server: cf.noaries.de, port: 2086, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_17, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_18, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_19, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: awsus2.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_20, server: cf.noaries.de, port: 8080, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nls.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_21, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ft.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_22, server: cf.noaries.de, port: 80, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_23, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: aws-usa.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_24, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ro.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_25, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_26, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_27, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: YouTube梦歌|华北低速_28, server: cf.noaries.de, port: 2052, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_1, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_2, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nls.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_3, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw-nl.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_4, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: lsb-aries.heinu.cf}}, udp: true}
+  - {name: 梦歌|低速直连线路_5, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vn.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_6, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw-nl.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_7, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: lsb-aries.heinu.cf}}, udp: true}
+  - {name: 梦歌|低速直连线路_8, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_9, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_10, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_11, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_12, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vn.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_13, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_14, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nls.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_15, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_16, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: pl.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_17, server: cf.noaries.de, port: 2082, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_18, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ft.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_19, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ee.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_20, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ee.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_21, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nls.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_22, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nls.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_23, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_24, server: cf.noaries.de, port: 2052, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}, udp: true}
+  - {name: 梦歌|低速直连线路_25, server: cf.noaries.de, port: 8080, type: vmess, uuid: 4f7d5d43-226e-48d8-9df0-5e8bf9f77288, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ft.cloudflare.quest}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|华北低速_1
-      - YouTube梦歌|华北低速_2
-      - YouTube梦歌|华北低速_3
-      - YouTube梦歌|华北低速_4
-      - YouTube梦歌|华北低速_5
-      - YouTube梦歌|华北低速_6
-      - YouTube梦歌|华北低速_7
-      - YouTube梦歌|华北低速_8
-      - YouTube梦歌|华北低速_9
-      - YouTube梦歌|华北低速_10
-      - YouTube梦歌|华北低速_11
-      - YouTube梦歌|华北低速_12
-      - YouTube梦歌|华北低速_13
-      - YouTube梦歌|华北低速_14
-      - YouTube梦歌|华北低速_15
-      - YouTube梦歌|华北低速_16
-      - YouTube梦歌|华北低速_17
-      - YouTube梦歌|华北低速_18
-      - YouTube梦歌|华北低速_19
-      - YouTube梦歌|华北低速_20
-      - YouTube梦歌|华北低速_21
-      - YouTube梦歌|华北低速_22
-      - YouTube梦歌|华北低速_23
-      - YouTube梦歌|华北低速_24
-      - YouTube梦歌|华北低速_25
-      - YouTube梦歌|华北低速_26
-      - YouTube梦歌|华北低速_27
-      - YouTube梦歌|华北低速_28
+      - 梦歌|低速直连线路_1
+      - 梦歌|低速直连线路_2
+      - 梦歌|低速直连线路_3
+      - 梦歌|低速直连线路_4
+      - 梦歌|低速直连线路_5
+      - 梦歌|低速直连线路_6
+      - 梦歌|低速直连线路_7
+      - 梦歌|低速直连线路_8
+      - 梦歌|低速直连线路_9
+      - 梦歌|低速直连线路_10
+      - 梦歌|低速直连线路_11
+      - 梦歌|低速直连线路_12
+      - 梦歌|低速直连线路_13
+      - 梦歌|低速直连线路_14
+      - 梦歌|低速直连线路_15
+      - 梦歌|低速直连线路_16
+      - 梦歌|低速直连线路_17
+      - 梦歌|低速直连线路_18
+      - 梦歌|低速直连线路_19
+      - 梦歌|低速直连线路_20
+      - 梦歌|低速直连线路_21
+      - 梦歌|低速直连线路_22
+      - 梦歌|低速直连线路_23
+      - 梦歌|低速直连线路_24
+      - 梦歌|低速直连线路_25
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - YouTube梦歌|华北低速_1
-      - YouTube梦歌|华北低速_2
-      - YouTube梦歌|华北低速_3
-      - YouTube梦歌|华北低速_4
-      - YouTube梦歌|华北低速_5
-      - YouTube梦歌|华北低速_6
-      - YouTube梦歌|华北低速_7
-      - YouTube梦歌|华北低速_8
-      - YouTube梦歌|华北低速_9
-      - YouTube梦歌|华北低速_10
-      - YouTube梦歌|华北低速_11
-      - YouTube梦歌|华北低速_12
-      - YouTube梦歌|华北低速_13
-      - YouTube梦歌|华北低速_14
-      - YouTube梦歌|华北低速_15
-      - YouTube梦歌|华北低速_16
-      - YouTube梦歌|华北低速_17
-      - YouTube梦歌|华北低速_18
-      - YouTube梦歌|华北低速_19
-      - YouTube梦歌|华北低速_20
-      - YouTube梦歌|华北低速_21
-      - YouTube梦歌|华北低速_22
-      - YouTube梦歌|华北低速_23
-      - YouTube梦歌|华北低速_24
-      - YouTube梦歌|华北低速_25
-      - YouTube梦歌|华北低速_26
-      - YouTube梦歌|华北低速_27
-      - YouTube梦歌|华北低速_28
+      - 梦歌|低速直连线路_1
+      - 梦歌|低速直连线路_2
+      - 梦歌|低速直连线路_3
+      - 梦歌|低速直连线路_4
+      - 梦歌|低速直连线路_5
+      - 梦歌|低速直连线路_6
+      - 梦歌|低速直连线路_7
+      - 梦歌|低速直连线路_8
+      - 梦歌|低速直连线路_9
+      - 梦歌|低速直连线路_10
+      - 梦歌|低速直连线路_11
+      - 梦歌|低速直连线路_12
+      - 梦歌|低速直连线路_13
+      - 梦歌|低速直连线路_14
+      - 梦歌|低速直连线路_15
+      - 梦歌|低速直连线路_16
+      - 梦歌|低速直连线路_17
+      - 梦歌|低速直连线路_18
+      - 梦歌|低速直连线路_19
+      - 梦歌|低速直连线路_20
+      - 梦歌|低速直连线路_21
+      - 梦歌|低速直连线路_22
+      - 梦歌|低速直连线路_23
+      - 梦歌|低速直连线路_24
+      - 梦歌|低速直连线路_25
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|华北低速_1
-      - YouTube梦歌|华北低速_2
-      - YouTube梦歌|华北低速_3
-      - YouTube梦歌|华北低速_4
-      - YouTube梦歌|华北低速_5
-      - YouTube梦歌|华北低速_6
-      - YouTube梦歌|华北低速_7
-      - YouTube梦歌|华北低速_8
-      - YouTube梦歌|华北低速_9
-      - YouTube梦歌|华北低速_10
-      - YouTube梦歌|华北低速_11
-      - YouTube梦歌|华北低速_12
-      - YouTube梦歌|华北低速_13
-      - YouTube梦歌|华北低速_14
-      - YouTube梦歌|华北低速_15
-      - YouTube梦歌|华北低速_16
-      - YouTube梦歌|华北低速_17
-      - YouTube梦歌|华北低速_18
-      - YouTube梦歌|华北低速_19
-      - YouTube梦歌|华北低速_20
-      - YouTube梦歌|华北低速_21
-      - YouTube梦歌|华北低速_22
-      - YouTube梦歌|华北低速_23
-      - YouTube梦歌|华北低速_24
-      - YouTube梦歌|华北低速_25
-      - YouTube梦歌|华北低速_26
-      - YouTube梦歌|华北低速_27
-      - YouTube梦歌|华北低速_28
+      - 梦歌|低速直连线路_1
+      - 梦歌|低速直连线路_2
+      - 梦歌|低速直连线路_3
+      - 梦歌|低速直连线路_4
+      - 梦歌|低速直连线路_5
+      - 梦歌|低速直连线路_6
+      - 梦歌|低速直连线路_7
+      - 梦歌|低速直连线路_8
+      - 梦歌|低速直连线路_9
+      - 梦歌|低速直连线路_10
+      - 梦歌|低速直连线路_11
+      - 梦歌|低速直连线路_12
+      - 梦歌|低速直连线路_13
+      - 梦歌|低速直连线路_14
+      - 梦歌|低速直连线路_15
+      - 梦歌|低速直连线路_16
+      - 梦歌|低速直连线路_17
+      - 梦歌|低速直连线路_18
+      - 梦歌|低速直连线路_19
+      - 梦歌|低速直连线路_20
+      - 梦歌|低速直连线路_21
+      - 梦歌|低速直连线路_22
+      - 梦歌|低速直连线路_23
+      - 梦歌|低速直连线路_24
+      - 梦歌|低速直连线路_25
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -152,34 +140,31 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌|华北低速_1
-      - YouTube梦歌|华北低速_2
-      - YouTube梦歌|华北低速_3
-      - YouTube梦歌|华北低速_4
-      - YouTube梦歌|华北低速_5
-      - YouTube梦歌|华北低速_6
-      - YouTube梦歌|华北低速_7
-      - YouTube梦歌|华北低速_8
-      - YouTube梦歌|华北低速_9
-      - YouTube梦歌|华北低速_10
-      - YouTube梦歌|华北低速_11
-      - YouTube梦歌|华北低速_12
-      - YouTube梦歌|华北低速_13
-      - YouTube梦歌|华北低速_14
-      - YouTube梦歌|华北低速_15
-      - YouTube梦歌|华北低速_16
-      - YouTube梦歌|华北低速_17
-      - YouTube梦歌|华北低速_18
-      - YouTube梦歌|华北低速_19
-      - YouTube梦歌|华北低速_20
-      - YouTube梦歌|华北低速_21
-      - YouTube梦歌|华北低速_22
-      - YouTube梦歌|华北低速_23
-      - YouTube梦歌|华北低速_24
-      - YouTube梦歌|华北低速_25
-      - YouTube梦歌|华北低速_26
-      - YouTube梦歌|华北低速_27
-      - YouTube梦歌|华北低速_28
+      - 梦歌|低速直连线路_1
+      - 梦歌|低速直连线路_2
+      - 梦歌|低速直连线路_3
+      - 梦歌|低速直连线路_4
+      - 梦歌|低速直连线路_5
+      - 梦歌|低速直连线路_6
+      - 梦歌|低速直连线路_7
+      - 梦歌|低速直连线路_8
+      - 梦歌|低速直连线路_9
+      - 梦歌|低速直连线路_10
+      - 梦歌|低速直连线路_11
+      - 梦歌|低速直连线路_12
+      - 梦歌|低速直连线路_13
+      - 梦歌|低速直连线路_14
+      - 梦歌|低速直连线路_15
+      - 梦歌|低速直连线路_16
+      - 梦歌|低速直连线路_17
+      - 梦歌|低速直连线路_18
+      - 梦歌|低速直连线路_19
+      - 梦歌|低速直连线路_20
+      - 梦歌|低速直连线路_21
+      - 梦歌|低速直连线路_22
+      - 梦歌|低速直连线路_23
+      - 梦歌|低速直连线路_24
+      - 梦歌|低速直连线路_25
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -190,101 +175,92 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - YouTube梦歌|华北低速_1
-      - YouTube梦歌|华北低速_2
-      - YouTube梦歌|华北低速_3
-      - YouTube梦歌|华北低速_4
-      - YouTube梦歌|华北低速_5
-      - YouTube梦歌|华北低速_6
-      - YouTube梦歌|华北低速_7
-      - YouTube梦歌|华北低速_8
-      - YouTube梦歌|华北低速_9
-      - YouTube梦歌|华北低速_10
-      - YouTube梦歌|华北低速_11
-      - YouTube梦歌|华北低速_12
-      - YouTube梦歌|华北低速_13
-      - YouTube梦歌|华北低速_14
-      - YouTube梦歌|华北低速_15
-      - YouTube梦歌|华北低速_16
-      - YouTube梦歌|华北低速_17
-      - YouTube梦歌|华北低速_18
-      - YouTube梦歌|华北低速_19
-      - YouTube梦歌|华北低速_20
-      - YouTube梦歌|华北低速_21
-      - YouTube梦歌|华北低速_22
-      - YouTube梦歌|华北低速_23
-      - YouTube梦歌|华北低速_24
-      - YouTube梦歌|华北低速_25
-      - YouTube梦歌|华北低速_26
-      - YouTube梦歌|华北低速_27
-      - YouTube梦歌|华北低速_28
+      - 梦歌|低速直连线路_1
+      - 梦歌|低速直连线路_2
+      - 梦歌|低速直连线路_3
+      - 梦歌|低速直连线路_4
+      - 梦歌|低速直连线路_5
+      - 梦歌|低速直连线路_6
+      - 梦歌|低速直连线路_7
+      - 梦歌|低速直连线路_8
+      - 梦歌|低速直连线路_9
+      - 梦歌|低速直连线路_10
+      - 梦歌|低速直连线路_11
+      - 梦歌|低速直连线路_12
+      - 梦歌|低速直连线路_13
+      - 梦歌|低速直连线路_14
+      - 梦歌|低速直连线路_15
+      - 梦歌|低速直连线路_16
+      - 梦歌|低速直连线路_17
+      - 梦歌|低速直连线路_18
+      - 梦歌|低速直连线路_19
+      - 梦歌|低速直连线路_20
+      - 梦歌|低速直连线路_21
+      - 梦歌|低速直连线路_22
+      - 梦歌|低速直连线路_23
+      - 梦歌|低速直连线路_24
+      - 梦歌|低速直连线路_25
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - YouTube梦歌|华北低速_1
-      - YouTube梦歌|华北低速_2
-      - YouTube梦歌|华北低速_3
-      - YouTube梦歌|华北低速_4
-      - YouTube梦歌|华北低速_5
-      - YouTube梦歌|华北低速_6
-      - YouTube梦歌|华北低速_7
-      - YouTube梦歌|华北低速_8
-      - YouTube梦歌|华北低速_9
-      - YouTube梦歌|华北低速_10
-      - YouTube梦歌|华北低速_11
-      - YouTube梦歌|华北低速_12
-      - YouTube梦歌|华北低速_13
-      - YouTube梦歌|华北低速_14
-      - YouTube梦歌|华北低速_15
-      - YouTube梦歌|华北低速_16
-      - YouTube梦歌|华北低速_17
-      - YouTube梦歌|华北低速_18
-      - YouTube梦歌|华北低速_19
-      - YouTube梦歌|华北低速_20
-      - YouTube梦歌|华北低速_21
-      - YouTube梦歌|华北低速_22
-      - YouTube梦歌|华北低速_23
-      - YouTube梦歌|华北低速_24
-      - YouTube梦歌|华北低速_25
-      - YouTube梦歌|华北低速_26
-      - YouTube梦歌|华北低速_27
-      - YouTube梦歌|华北低速_28
+      - 梦歌|低速直连线路_1
+      - 梦歌|低速直连线路_2
+      - 梦歌|低速直连线路_3
+      - 梦歌|低速直连线路_4
+      - 梦歌|低速直连线路_5
+      - 梦歌|低速直连线路_6
+      - 梦歌|低速直连线路_7
+      - 梦歌|低速直连线路_8
+      - 梦歌|低速直连线路_9
+      - 梦歌|低速直连线路_10
+      - 梦歌|低速直连线路_11
+      - 梦歌|低速直连线路_12
+      - 梦歌|低速直连线路_13
+      - 梦歌|低速直连线路_14
+      - 梦歌|低速直连线路_15
+      - 梦歌|低速直连线路_16
+      - 梦歌|低速直连线路_17
+      - 梦歌|低速直连线路_18
+      - 梦歌|低速直连线路_19
+      - 梦歌|低速直连线路_20
+      - 梦歌|低速直连线路_21
+      - 梦歌|低速直连线路_22
+      - 梦歌|低速直连线路_23
+      - 梦歌|低速直连线路_24
+      - 梦歌|低速直连线路_25
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌|华北低速_1
-      - YouTube梦歌|华北低速_2
-      - YouTube梦歌|华北低速_3
-      - YouTube梦歌|华北低速_4
-      - YouTube梦歌|华北低速_5
-      - YouTube梦歌|华北低速_6
-      - YouTube梦歌|华北低速_7
-      - YouTube梦歌|华北低速_8
-      - YouTube梦歌|华北低速_9
-      - YouTube梦歌|华北低速_10
-      - YouTube梦歌|华北低速_11
-      - YouTube梦歌|华北低速_12
-      - YouTube梦歌|华北低速_13
-      - YouTube梦歌|华北低速_14
-      - YouTube梦歌|华北低速_15
-      - YouTube梦歌|华北低速_16
-      - YouTube梦歌|华北低速_17
-      - YouTube梦歌|华北低速_18
-      - YouTube梦歌|华北低速_19
-      - YouTube梦歌|华北低速_20
-      - YouTube梦歌|华北低速_21
-      - YouTube梦歌|华北低速_22
-      - YouTube梦歌|华北低速_23
-      - YouTube梦歌|华北低速_24
-      - YouTube梦歌|华北低速_25
-      - YouTube梦歌|华北低速_26
-      - YouTube梦歌|华北低速_27
-      - YouTube梦歌|华北低速_28
+      - 梦歌|低速直连线路_1
+      - 梦歌|低速直连线路_2
+      - 梦歌|低速直连线路_3
+      - 梦歌|低速直连线路_4
+      - 梦歌|低速直连线路_5
+      - 梦歌|低速直连线路_6
+      - 梦歌|低速直连线路_7
+      - 梦歌|低速直连线路_8
+      - 梦歌|低速直连线路_9
+      - 梦歌|低速直连线路_10
+      - 梦歌|低速直连线路_11
+      - 梦歌|低速直连线路_12
+      - 梦歌|低速直连线路_13
+      - 梦歌|低速直连线路_14
+      - 梦歌|低速直连线路_15
+      - 梦歌|低速直连线路_16
+      - 梦歌|低速直连线路_17
+      - 梦歌|低速直连线路_18
+      - 梦歌|低速直连线路_19
+      - 梦歌|低速直连线路_20
+      - 梦歌|低速直连线路_21
+      - 梦歌|低速直连线路_22
+      - 梦歌|低速直连线路_23
+      - 梦歌|低速直连线路_24
+      - 梦歌|低速直连线路_25
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -300,34 +276,31 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌|华北低速_1
-      - YouTube梦歌|华北低速_2
-      - YouTube梦歌|华北低速_3
-      - YouTube梦歌|华北低速_4
-      - YouTube梦歌|华北低速_5
-      - YouTube梦歌|华北低速_6
-      - YouTube梦歌|华北低速_7
-      - YouTube梦歌|华北低速_8
-      - YouTube梦歌|华北低速_9
-      - YouTube梦歌|华北低速_10
-      - YouTube梦歌|华北低速_11
-      - YouTube梦歌|华北低速_12
-      - YouTube梦歌|华北低速_13
-      - YouTube梦歌|华北低速_14
-      - YouTube梦歌|华北低速_15
-      - YouTube梦歌|华北低速_16
-      - YouTube梦歌|华北低速_17
-      - YouTube梦歌|华北低速_18
-      - YouTube梦歌|华北低速_19
-      - YouTube梦歌|华北低速_20
-      - YouTube梦歌|华北低速_21
-      - YouTube梦歌|华北低速_22
-      - YouTube梦歌|华北低速_23
-      - YouTube梦歌|华北低速_24
-      - YouTube梦歌|华北低速_25
-      - YouTube梦歌|华北低速_26
-      - YouTube梦歌|华北低速_27
-      - YouTube梦歌|华北低速_28
+      - 梦歌|低速直连线路_1
+      - 梦歌|低速直连线路_2
+      - 梦歌|低速直连线路_3
+      - 梦歌|低速直连线路_4
+      - 梦歌|低速直连线路_5
+      - 梦歌|低速直连线路_6
+      - 梦歌|低速直连线路_7
+      - 梦歌|低速直连线路_8
+      - 梦歌|低速直连线路_9
+      - 梦歌|低速直连线路_10
+      - 梦歌|低速直连线路_11
+      - 梦歌|低速直连线路_12
+      - 梦歌|低速直连线路_13
+      - 梦歌|低速直连线路_14
+      - 梦歌|低速直连线路_15
+      - 梦歌|低速直连线路_16
+      - 梦歌|低速直连线路_17
+      - 梦歌|低速直连线路_18
+      - 梦歌|低速直连线路_19
+      - 梦歌|低速直连线路_20
+      - 梦歌|低速直连线路_21
+      - 梦歌|低速直连线路_22
+      - 梦歌|低速直连线路_23
+      - 梦歌|低速直连线路_24
+      - 梦歌|低速直连线路_25
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
